@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.wrapper{ margin-top: 10px; display: flex; flex-direction: column; gap: 100px; align-items: center;
+  flex-wrap: wrap;}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
