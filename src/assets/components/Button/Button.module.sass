@@ -1,0 +1,107 @@
+@import '/src/assets/_style_d/_darkColors.sass'
+@import '/src/assets/_style_d/main'
+
+.wrapper
+	font-family: "Poppins"
+	outline: none
+	border: none
+	color: $white
+	font-weight: 600
+	font-size: 16px
+	line-height: 28px
+	letter-spacing: 0.75px
+	border-radius: 40px
+
+	/*Размеры */ 
+	&.large
+		width: 200px
+		height: 64px
+
+	&.medium
+		width: 200px
+		height: 56px
+
+	&.small
+		width: 120px
+		height: 40px
+		font-size: 14px
+		line-height: 24px
+
+	/*Стили */ 
+	/*Основной стиль кнопки*/ 
+	&.primary
+		background: $color-gradient-primary-darck-top
+
+		&:hover
+			background: $color-primary-darck
+
+		&:focus-visible
+			border: $border-primary-focus
+
+		&:active
+			background: $color-title-active
+
+		&:disabled
+			opacity: 0.5
+
+	/*Второй стиль кнопки*/
+	&.secondary
+		background: $white
+		border: 2px solid $color-gradient-primary-darck-top
+		color: $color-gradient-primary-darck-top
+
+		&:hover
+			color: $color-primary-darck
+			border: 2px solid $color-primary-darck
+
+		&:focus
+			color: $border-secondary-focus
+			border: 8px solid $border-secondary-focus
+
+		&:active
+			border: 2px solid $color-title-active
+			color: $color-title-active
+
+		&:disabled
+			opacity: 0.5
+
+	/*Третий стиль кнопки*/ 
+	&.subtle
+		background: $white
+		border: 2px solid $border-color-line
+		color: $color-gradient-primary-darck-top
+
+		&:hover
+			color: $color-primary-darck
+			transition: 0.5s ease
+
+		&:focus
+			color: $border-secondary-focus
+			border: 8px solid $border-color-line
+			transition: 0.5s ease
+
+		&:active
+			color: $color-title-active
+			transition: 0.5s ease
+
+		&:disabled
+			opacity: 0.5
+
+	/*Четвертый стиль кнопки*/ 
+	&.text
+		color: $color-gradient-primary-darck-top
+
+		&:hover
+			color: $color-primary-darck
+			transition: 0.5s ease
+
+		&:focus
+			color: $border-secondary-focus
+			background: $border-secondary-focus
+
+		&:active
+			color: $color-title-active
+			transition: 0.5s ease
+
+		&:disabled
+			opacity: 0.5

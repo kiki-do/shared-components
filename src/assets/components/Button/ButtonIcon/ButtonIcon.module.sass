@@ -1,0 +1,52 @@
+@import '/src/assets/_style_d/_darkColors.sass'
+@import '/src/assets/_style_d/main'
+
+.wrapper
+  line-height: 28px
+  letter-spacing: 0.75px
+  border-radius: 40px
+  width: 56px
+  height: 56px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  outline: none
+
+  /*Стили */ 
+  /*Основной стиль кнопки*/ 
+  &.primary
+    background: $color-gradient-primary-darck-top
+
+    &:hover
+      background: $color-primary-darck
+
+    &:focus-visible
+      border: $border-primary-focus
+
+    &:active
+      background: $color-title-active
+
+    &:disabled
+      opacity: 0.5
+
+  /*Второй стиль кнопки*/
+  &.secondary
+    background: $white
+    border: 2px solid $color-gradient-primary-darck-top
+    color: $color-gradient-primary-darck-top
+
+    &:hover
+      color: $color-primary-darck
+      border: 2px solid $color-primary-darck
+
+    &:focus
+      color: $border-secondary-focus
+      border: 8px solid $border-secondary-focus
+
+    &:active
+      border: 2px solid $color-title-active
+      color: $color-title-active
+
+    &:disabled
+      opacity: 0.5
