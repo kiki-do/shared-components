@@ -1,8 +1,11 @@
-import { useState } from "react";
 import classes from "./App.module.sass";
 import { Accordion } from "./assets/components/Accordion/Accordion";
 import { Button } from "./assets/components/Button/Button";
+import { CarouselPagination } from "./assets/components/CarouselPagination/CarouselPagination";
+import { CircularProgression } from "./assets/components/CircrularProgression/CircularProgression";
+import { Comments } from "./assets/components/Comments/Comments";
 import { Dropdown } from "./assets/components/Dropdown/Dropdown";
+import { ProgressIndicator } from "./assets/components/ProgressIndicator/ProgressIndicator";
 import { Select } from "./assets/components/Select/Select";
 
 export interface optionsProps {
@@ -98,14 +101,12 @@ function App() {
 					<Button.Icon name="forward" view="secondary" />
 				</div>
 			</div>
-
 			<span className={classes.options}>Dropdown</span>
 			<div className={classes.dropdown}>
 				<Dropdown options={options} />
 			</div>
-
 			<div className={classes.accordion}>
-				<text>Аккордеон</text>
+				<b>Аккордеон</b>
 				<div className={classes.component}>
 					<Accordion
 						text="Here’s some example text that may answer an FAQ or give the user some helpful advice."
@@ -119,7 +120,6 @@ function App() {
 					/>
 				</div>
 			</div>
-
 			<div className={classes.select}>
 				<div className={classes.display}>Display</div>
 				<div className={classes.tabs}>Tabs</div>
@@ -129,6 +129,27 @@ function App() {
 						<Select />
 					))}
 				</div>
+			</div>
+			<div className={classes.carousel}>
+				<div className={classes.sectionTabs}>Section tabs</div>
+				<div className={classes.array}>
+					{[...Array(5)].map(() => (
+						<CarouselPagination />
+					))}
+				</div>
+			</div>
+			<div className={classes.progress}>
+				<div className={classes.sectionTabs}>Progress Indicator</div>
+				<div className={classes.array}>
+					<ProgressIndicator />
+					<CircularProgression />
+				</div>
+			</div>
+			<div className={classes.comments}>
+				<div className={classes.sectionTabs}>Comments</div>
+				<Comments>
+					I wonder if there is a way this can be learned quickly.
+				</Comments>
 			</div>
 		</div>
 	);

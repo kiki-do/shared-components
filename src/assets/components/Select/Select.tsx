@@ -9,11 +9,7 @@ export const Select: FC = () => {
 	};
 
 	return (
-		<button
-			className={classes.wrapper}
-			onClick={selectedHandle}
-			onFocus={selectedHandle}
-		>
+		<button className={classes.wrapper} onClick={selectedHandle}>
 			<div className={isSelected ? classes.text : classes.unselected}>
 				Selected
 			</div>

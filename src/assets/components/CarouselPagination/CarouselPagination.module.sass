@@ -1,0 +1,45 @@
+@import '/src/assets/_style_d/main'
+
+.wrapper
+  width: 32px
+  height: 8px
+  background: $color-placeholder
+  border-radius: 4px
+
+  &:hover
+    background: $color-label
+    transition: 0.3s
+
+  &:focus
+    background: $color-primary
+    outline: 8px solid $border-primary-focus
+    transition: 0.3s
+
+  &:active
+    background: $color-title-active
+    transition: 0.3s
+
+  &:disabled
+    background: $color-placeholder
+
+.unselected
+  width: 16px
+  height: 8px
+  background: $border-secondary-focus
+  border-radius: 4px
+
+  &:hover
+    background: $bg-input
+    transition: 0.3s
+
+  &:focus
+    background: $bg-input
+    outline: 8px solid $border-secondary-focus
+    transition: 0.3s
+
+  &:active
+    background: $color-title-active
+    transition: 0.3s
+
+  &:disabled
+    background: $border-secondary-focus
