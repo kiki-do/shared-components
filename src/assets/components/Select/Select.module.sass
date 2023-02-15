@@ -1,0 +1,57 @@
+.wrapper, .nowrapper
+  width: 116px
+  height: auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 4px
+  cursor: pointer
+  outline: none
+  border: none
+  background: none
+  padding: 10px
+
+  &:hover
+    .text
+      color: #4E4B66
+
+    .selected
+      background: #4E4B66
+
+  &:active
+    .text
+      color: #14142B
+
+    .selected
+      background: #14142B
+
+  &:focus
+    transition: 0.3s
+    background: #EFF0F7
+    border-radius: 16px
+
+  .text, .unselected
+    font-weight: 600
+    font-size: 16px
+    line-height: 32px
+    text-align: center
+    letter-spacing: 0.75px
+
+    &:disabled
+      color: #6E7191
+
+  .text
+    color: #14142B
+
+  .unselected
+    color: #6E7191
+
+    &:hover
+      color: #4E4B66
+
+  .selected
+    width: 8px
+    height: 8px
+    background: #14142B
+    border-radius: 10px

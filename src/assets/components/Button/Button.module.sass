@@ -34,12 +34,15 @@
 
 		&:hover
 			background: $color-primary-darck
+			transition: 0.3s ease
 
-		&:focus-visible
-			border: $border-primary-focus
+		&:focus
+			outline: $border-primary-focus
+			transition: 0.3s ease
 
 		&:active
 			background: $color-title-active
+			transition: 0.3s ease
 
 		&:disabled
 			opacity: 0.5
@@ -53,14 +56,17 @@
 		&:hover
 			color: $color-primary-darck
 			border: 2px solid $color-primary-darck
+			transition: 0.3s ease
 
 		&:focus
-			color: $border-secondary-focus
-			border: 8px solid $border-secondary-focus
+			color: $color-gradient-primary-darck-top
+			outline: 8px solid $border-secondary-focus
+			transition: 0.3s ease
 
 		&:active
 			border: 2px solid $color-title-active
 			color: $color-title-active
+			transition: 0.3s ease
 
 		&:disabled
 			opacity: 0.5
@@ -73,35 +79,34 @@
 
 		&:hover
 			color: $color-primary-darck
-			transition: 0.5s ease
+			transition: 0.3s ease
 
 		&:focus
-			color: $border-secondary-focus
-			border: 8px solid $border-color-line
-			transition: 0.5s ease
+			outline: 8px solid $border-color-line
+			transition: 0.3s ease
 
 		&:active
 			color: $color-title-active
-			transition: 0.5s ease
+			transition: 0.3s ease
 
 		&:disabled
 			opacity: 0.5
 
 	/*Четвертый стиль кнопки*/ 
 	&.text
+		background: none
 		color: $color-gradient-primary-darck-top
 
 		&:hover
 			color: $color-primary-darck
-			transition: 0.5s ease
+			transition: 0.3s ease
 
 		&:focus
-			color: $border-secondary-focus
 			background: $border-secondary-focus
 
 		&:active
 			color: $color-title-active
-			transition: 0.5s ease
+			transition: 0.3s ease
 
 		&:disabled
 			opacity: 0.5

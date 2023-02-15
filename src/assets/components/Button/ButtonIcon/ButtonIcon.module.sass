@@ -20,12 +20,15 @@
 
     &:hover
       background: $color-primary-darck
+      transition: 0.3s
 
-    &:focus-visible
-      border: $border-primary-focus
+    &:focus
+      outline: 8px solid $border-secondary-focus
+      transition: 0.3s
 
     &:active
       background: $color-title-active
+      transition: 0.3s
 
     &:disabled
       opacity: 0.5
@@ -36,17 +39,36 @@
     border: 2px solid $color-gradient-primary-darck-top
     color: $color-gradient-primary-darck-top
 
+    .icon
+      & path
+        stroke: $color-gradient-primary-darck-top
+
     &:hover
       color: $color-primary-darck
       border: 2px solid $color-primary-darck
+      transition: 0.3s
+
+      .icon
+        & path
+          stroke: $color-primary-darck
 
     &:focus
       color: $border-secondary-focus
-      border: 8px solid $border-secondary-focus
+      outline: 8px solid $border-secondary-focus
+      transition: 0.3s
 
     &:active
       border: 2px solid $color-title-active
       color: $color-title-active
+      transition: 0.3s
+
+      .icon
+        & path
+          stroke: $color-title-active
 
     &:disabled
       opacity: 0.5
+
+      .icon
+        & path
+          opacity: 0.5
