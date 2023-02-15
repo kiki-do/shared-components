@@ -111,6 +111,12 @@ function App() {
 						text="Here’s some example text that may answer an FAQ or give the user some helpful advice."
 						title="Active accordion state"
 					/>
+
+					<Accordion
+						disabled={true}
+						text="Here’s some example text that may answer an FAQ or give the user some helpful advice."
+						title="Active accordion state"
+					/>
 				</div>
 			</div>
 
