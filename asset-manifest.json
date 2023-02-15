@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kiki-do/shared-components/static/css/main.6c1250b2.css",
-    "main.js": "/kiki-do/shared-components/static/js/main.cf32afd0.js",
-    "static/js/787.7b3e4809.chunk.js": "/kiki-do/shared-components/static/js/787.7b3e4809.chunk.js",
-    "index.html": "/kiki-do/shared-components/index.html",
-    "static/media/plus.svg": "/kiki-do/shared-components/static/media/plus.8a93153fa9427613c99ad16dd69b5418.svg",
-    "static/media/forward.svg": "/kiki-do/shared-components/static/media/forward.9c409888007537d1b71078ce49234783.svg",
-    "static/media/minus.svg": "/kiki-do/shared-components/static/media/minus.a72e0ae1e0df3b30fc0a98ad327a0c00.svg",
-    "main.6c1250b2.css.map": "/kiki-do/shared-components/static/css/main.6c1250b2.css.map",
-    "main.cf32afd0.js.map": "/kiki-do/shared-components/static/js/main.cf32afd0.js.map",
-    "787.7b3e4809.chunk.js.map": "/kiki-do/shared-components/static/js/787.7b3e4809.chunk.js.map"
+    "main.css": "/shared-components/static/css/main.6c1250b2.css",
+    "main.js": "/shared-components/static/js/main.56df023f.js",
+    "static/js/787.7b3e4809.chunk.js": "/shared-components/static/js/787.7b3e4809.chunk.js",
+    "index.html": "/shared-components/index.html",
+    "static/media/plus.svg": "/shared-components/static/media/plus.8a93153fa9427613c99ad16dd69b5418.svg",
+    "static/media/forward.svg": "/shared-components/static/media/forward.9c409888007537d1b71078ce49234783.svg",
+    "static/media/minus.svg": "/shared-components/static/media/minus.a72e0ae1e0df3b30fc0a98ad327a0c00.svg",
+    "main.6c1250b2.css.map": "/shared-components/static/css/main.6c1250b2.css.map",
+    "main.56df023f.js.map": "/shared-components/static/js/main.56df023f.js.map",
+    "787.7b3e4809.chunk.js.map": "/shared-components/static/js/787.7b3e4809.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c1250b2.css",
-    "static/js/main.cf32afd0.js"
+    "static/js/main.56df023f.js"
   ]
 }
