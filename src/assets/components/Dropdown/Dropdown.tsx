@@ -28,7 +28,7 @@ export const Dropdown: DropdownComponent = ({ options }) => {
 				readOnly
 			/>
 			<Icon
-				className={classes.icon}
+				className={isActive ? classes.activeIcon : classes.icon}
 				name="forward"
 				size={10}
 				onClick={dropdownHandler}

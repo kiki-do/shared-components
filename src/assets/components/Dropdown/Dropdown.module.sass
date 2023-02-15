@@ -2,7 +2,6 @@
 @import '/src/assets/_style_d/main'
 
 .wrapper
-  font-family: "Poppins"
   width: 225px
   height: 56px
   position: relative
@@ -28,14 +27,17 @@
       color: $color-title-active
       border: 2px solid $color-title-active
 
-      .icon
-        &:active
-          & path
-            stroke: $color-title-active
-            transform: rotate(90deg)
-
     &:focus
       border: 2px solid $color-primary
+
+  .activeIcon
+    position: absolute
+    top: 25px
+    right: -5px
+    & path
+      stroke: $color-title-active
+      transform: rotate(0deg)
+      transition: 0.3s
 
   .icon
     cursor: pointer
@@ -47,6 +49,7 @@
     & path
       stroke: $color-placeholder
       transform: rotate(90deg)
+      transition: 0.3s
 
     &:disabled
       background: $border-secondary-focus
