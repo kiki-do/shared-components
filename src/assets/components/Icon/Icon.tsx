@@ -12,7 +12,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 
 export interface IconComponent extends FC<IconProps> {}
 
-export const Icon: IconComponent = ({ name, size = 5, ...props }) => {
+export const Icon: IconComponent = ({ name, size = 20, ...props }) => {
 	const style = useMemo(
 		() => ({
 			...(size !== "auto" && { width: size, height: size }),

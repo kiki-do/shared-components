@@ -1,0 +1,31 @@
+.wrapper
+  background: #4E4B66
+  max-width: 250px
+  padding: 16px 24px
+  position: relative
+  border-radius: 16px
+
+  &.left
+    &::before
+      content: ''
+      position: absolute
+      top: -18px
+      left: 15px
+      border: 10px solid transparent
+      border-bottom: 10px solid #4E4B66
+
+  &.right
+    &::before
+      content: ''
+      position: absolute
+      top: -18px
+      right: 15px
+      border: 10px solid transparent
+      border-bottom: 10px solid #4E4B66
+
+  .text
+    font-weight: 400
+    font-size: 16px
+    line-height: 28px
+    color: #FCFCFC
+    letter-spacing: 0.75px
