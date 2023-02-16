@@ -1,4 +1,5 @@
-import { useState } from "react";
+import type { MutableRefObject } from "react";
+import { useState, useRef, useEffect } from "react";
 import classes from "./App.module.sass";
 import { Accordion } from "./assets/components/Accordion/Accordion";
 import { Button } from "./assets/components/Button/Button";
@@ -26,6 +27,17 @@ function App() {
 	];
 
 	const [isModal, setIsModal] = useState(false);
+
+	const [scroll, setScroll] = useState(0);
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	const handleScroll = () => {
+		setScroll(window.scrollY);
+	};
 
 	const handleIsModal = () => setIsModal(!isModal);
 
@@ -113,7 +125,7 @@ function App() {
 					</div>
 					<span className={classes.options}>Dropdown</span>
 					<div className={classes.dropdown}>
-						<Dropdown options={options} />
+						<Dropdown scroll={scroll} options={options} />
 					</div>
 					<div className={classes.accordion}>
 						<b>Аккордеон</b>

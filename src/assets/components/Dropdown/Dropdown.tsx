@@ -1,17 +1,19 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { FC, MutableRefObject, ChangeEvent } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Dropdown.module.sass";
 import { optionsProps } from "../../../App";
+import clsx from "clsx";
 
 export interface DropdownProps {
 	options: optionsProps[];
 	className?: string;
+	scroll: number;
 }
 
 export interface DropdownComponent extends FC<DropdownProps> {}
 
-export const Dropdown: DropdownComponent = ({ options }) => {
+export const Dropdown: DropdownComponent = ({ options, scroll }) => {
 	const [isActive, setIsActive] = useState(false);
 	const [selected, setSelected] = useState("Initial");
 	const dropdownRef = useRef() as MutableRefObject<HTMLInputElement>;
@@ -25,6 +27,14 @@ export const Dropdown: DropdownComponent = ({ options }) => {
 
 		document.addEventListener("mousedown", hanlder);
 	}, []);
+
+	const contentClassName = useMemo(
+		() =>
+			clsx(classes.content, {
+				[classes.upper]: scroll < 1650,
+			}),
+		[scroll]
+	);
 
 	const dropdownHandler = () => {
 		setIsActive(!isActive);
@@ -47,7 +57,7 @@ export const Dropdown: DropdownComponent = ({ options }) => {
 			/>
 
 			{isActive && (
-				<div className={classes.content}>
+				<div className={contentClassName}>
 					{options.map(({ id, option }: optionsProps) => (
 						<div
 							key={id}
