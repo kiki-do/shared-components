@@ -1,4 +1,4 @@
-import { FC, useState, ButtonHTMLAttributes } from "react";
+import { FC, useState } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Accordion.module.sass";
 

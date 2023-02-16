@@ -1,5 +1,4 @@
-import type { MutableRefObject } from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import classes from "./App.module.sass";
 import { Accordion } from "./assets/components/Accordion/Accordion";
 import { Button } from "./assets/components/Button/Button";
@@ -112,7 +111,7 @@ function App() {
 								Button
 							</Button>
 
-							<Button size="small" view="primary" disabled>
+							<Button className="" size="small" view="primary" disabled>
 								Button
 							</Button>
 						</div>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import type { FC, MutableRefObject, ChangeEvent } from "react";
+import type { FC, MutableRefObject } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Dropdown.module.sass";
 import { optionsProps } from "../../../App";
@@ -26,7 +26,7 @@ export const Dropdown: DropdownComponent = ({ options, scroll }) => {
 		};
 
 		document.addEventListener("mousedown", hanlder);
-	}, []);
+	});
 
 	const contentClassName = useMemo(
 		() =>

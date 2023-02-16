@@ -22,7 +22,7 @@ export const useMatchMedia = () => {
 			mediaQueryLists.forEach(list =>
 				list.removeEventListener("change", handler)
 			);
-	}, []);
+	});
 
 	return ["isMobile", "isTablet", "isDesktop"].reduce(
 		(acc, screen, index) => ({
