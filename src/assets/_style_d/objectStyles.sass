@@ -1,0 +1,28 @@
+@import '/main'
+@import '/_lightColors'
+@import '/_darkColors'
+
+.border-large-radius
+  border-radius: 32px
+
+.border-normal-radius
+  border-radius: 16px
+
+.border-small-radius
+  border-radius: 8px
+
+.soft-dropshadow
+  filter: drop-shadow($soft-dropshadow)
+
+.large-dropshadow
+  filter: drop-shadow($large-dropshadow)
+
+.blur-light
+  background: $light-blur
+  backdrop-filter: blur(22.5px)
+  transform: matrix(1, 0, 0, -1, 0, 0)
+
+.blur-dark
+  background: $dark-blur
+  backdrop-filter: blur(22.5px)
+  transform: matrix(1, 0, 0, -1, 0, 0)
