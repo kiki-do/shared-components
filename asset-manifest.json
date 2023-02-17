@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/shared-components/static/css/main.4cca7963.css",
-    "main.js": "/shared-components/static/js/main.f7b7e916.js",
+    "main.css": "/shared-components/static/css/main.67ab93ed.css",
+    "main.js": "/shared-components/static/js/main.2253f7e2.js",
     "static/js/787.7b3e4809.chunk.js": "/shared-components/static/js/787.7b3e4809.chunk.js",
     "index.html": "/shared-components/index.html",
     "static/media/close.svg": "/shared-components/static/media/close.f27f8f24ff843354c0f4770d88541f49.svg",
     "static/media/plus.svg": "/shared-components/static/media/plus.8a93153fa9427613c99ad16dd69b5418.svg",
     "static/media/forward.svg": "/shared-components/static/media/forward.9c409888007537d1b71078ce49234783.svg",
     "static/media/minus.svg": "/shared-components/static/media/minus.a72e0ae1e0df3b30fc0a98ad327a0c00.svg",
-    "main.4cca7963.css.map": "/shared-components/static/css/main.4cca7963.css.map",
-    "main.f7b7e916.js.map": "/shared-components/static/js/main.f7b7e916.js.map",
+    "main.67ab93ed.css.map": "/shared-components/static/css/main.67ab93ed.css.map",
+    "main.2253f7e2.js.map": "/shared-components/static/js/main.2253f7e2.js.map",
     "787.7b3e4809.chunk.js.map": "/shared-components/static/js/787.7b3e4809.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cca7963.css",
-    "static/js/main.f7b7e916.js"
+    "static/css/main.67ab93ed.css",
+    "static/js/main.2253f7e2.js"
   ]
 }
