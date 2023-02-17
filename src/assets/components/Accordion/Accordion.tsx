@@ -1,10 +1,11 @@
-import { FC, useState } from "react";
+import { useState } from "react";
+import type { FC, ReactNode } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Accordion.module.sass";
 
 export interface AccordionProps {
 	title: string;
-	text: string;
+	children: ReactNode;
 	disabled?: boolean;
 }
 
@@ -12,7 +13,7 @@ export interface AccorionComponent extends FC<AccordionProps> {}
 
 export const Accordion: AccorionComponent = ({
 	title,
-	text,
+	children,
 	disabled = false,
 }) => {
 	const [isActive, setIsActive] = useState(false);
@@ -34,7 +35,7 @@ export const Accordion: AccorionComponent = ({
 					size={18}
 				/>
 			</div>
-			{isActive && <span className={classes.text}>{text}</span>}
+			{isActive && <span className={classes.text}>{children}</span>}
 		</div>
 	);
 };

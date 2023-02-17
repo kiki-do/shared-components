@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import type { FC, MutableRefObject } from "react";
+import type { FC } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Dropdown.module.sass";
 import { optionsProps } from "../../../App";
@@ -16,17 +16,17 @@ export interface DropdownComponent extends FC<DropdownProps> {}
 export const Dropdown: DropdownComponent = ({ options, scroll }) => {
 	const [isActive, setIsActive] = useState(false);
 	const [selected, setSelected] = useState("Initial");
-	const dropdownRef = useRef() as MutableRefObject<HTMLInputElement>;
+	const dropdownRef = useRef<HTMLInputElement>();
 
-	useEffect(() => {
-		const hanlder = (e: any) => {
-			if (isActive && !dropdownRef?.current.contains(e.target)) {
-				setIsActive(false);
-			}
-		};
+	// useEffect(() => {
+	// 	const hanlder = (e: any) => {
+	// 		if (isActive && !dropdownRef.current?.contains(e.target as Node)) {
+	// 			setIsActive(false);
+	// 		}
+	// 	};
 
-		document.addEventListener("mousedown", hanlder);
-	});
+	// 	window.addEventListener("mousedown", hanlder);
+	// });
 
 	const contentClassName = useMemo(
 		() =>
@@ -43,7 +43,7 @@ export const Dropdown: DropdownComponent = ({ options, scroll }) => {
 	return (
 		<div className={classes.wrapper}>
 			<input
-				ref={dropdownRef}
+				// ref={dropdownRef}
 				className={classes.input}
 				value={selected}
 				onClick={dropdownHandler}

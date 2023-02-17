@@ -2,25 +2,32 @@
   text-align: center
 
 .wrapper
+  max-width: 1200px
+  margin: 0 auto
   margin-top: 10px
   display: flex
   flex-direction: column
   gap: 100px
-  align-items: center
   flex-wrap: wrap
   padding-bottom: 100px
 
   .button
     display: flex
     flex-direction: column
+    align-items: center
     gap: 50px
 
-    .size
-      font-weight: 700
-      font-size: 48px
-      line-height: 50px
-      letter-spacing: 1px
-      color: #14142B
+    .descriptions
+      text-align: center
+      max-width: 75%
+      font-size: 20px
+
+      .size
+        font-weight: 700
+        font-size: 48px
+        line-height: 50px
+        letter-spacing: 1px
+        color: #14142B
 
     .forms
       font-weight: 400
@@ -39,11 +46,12 @@
     .large
       border: 1px dashed #5F2EEA
       border-radius: 5px
-      width: auto
+      width: 70%
       padding: 40px
-      height: 200px
+      height: 100%
       display: flex
       justify-content: center
+      flex-wrap: wrap
       align-items: center
       gap: 40px
 
@@ -52,26 +60,38 @@
       display: flex
       justify-content: center
       padding: 50px
-      gap: 100px
+      gap: 50px
       border: 1px dashed #5F2EEA
 
-  .options
-    display: flex
-    align-items: start
-    font-weight: 700
-    font-size: 64px
-    line-height: 66px
-    letter-spacing: 1px
-    color: #14142B
-
   .dropdown
-    border: 1px dashed #5F2EEA
-    padding: 20px
-    width: 500px
-    height: 550px
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
+    gap: 40px
+
+    .descriptions
+      text-align: center
+      max-width: 75%
+      font-size: 20px
+
+    .options
+      display: flex
+      align-items: start
+      font-weight: 700
+      font-size: 64px
+      line-height: 66px
+      letter-spacing: 1px
+      color: #14142B
+
+    .option
+      border: 1px dashed #5F2EEA
+      padding: 0px
+      width: 30%
+      height: 550px
+      display: flex
+      justify-content: center
+      align-items: center
 
   .accordion
     display: flex
@@ -79,6 +99,11 @@
     justify-content: center
     align-items: center
     gap: 50px
+
+    .descriptions
+      text-align: center
+      max-width: 75%
+      font-size: 20px
 
     .component
       display: flex
@@ -94,6 +119,10 @@
       color: #14142B
 
   .select
+    display: flex
+    flex-direction: column
+    align-items: center
+
     .display
       font-weight: 400
       font-size: 32px
@@ -110,6 +139,7 @@
       margin-bottom: 60px
 
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -123,14 +153,14 @@
       flex-direction: column
       align-items: center
       justify-content: space-between
-      width: 360px
+      width: 50%
       height: 566px
       border: 1px dashed #5F2EEA
       border-radius: 5px
 
   .carousel
-
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -140,11 +170,9 @@
 
     .array
       background: #000
-      padding: 20px
       display: flex
       align-items: center
       justify-content: space-between
-      width: 360px
       height: 166px
       border: 1px dashed #5F2EEA
       border-radius: 5px
@@ -153,6 +181,7 @@
 
   .progress
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -161,16 +190,21 @@
       margin-bottom: 60px
 
     .array
-      padding: 30px
-      width: 560px
-      height: 166px
+      padding: 30px 0 30px 0
+      height: 100%
       border: 1px dashed #5F2EEA
       display: flex
       flex-direction: row
-      justify-content: space-between
+      flex-wrap: wrap
+      justify-content: center
 
   .comments
+    display: flex
+    flex-direction: column
+    align-items: center
+
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -180,6 +214,7 @@
 
   .toast
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -187,14 +222,22 @@
       color: #14142B
       margin-bottom: 60px
 
+    .descriptions
+      text-align: center
+      max-width: 100%
+      font-size: 20px
+      margin-bottom: 20px
+      display: flex
+
     .array
       display: flex
       flex-direction: row
-      justify-content: center
       align-items: center
       gap: 100px
-      width: 800px
-      height: 506px
+      width: 100%
+      padding: 10px 0 10px 0
+      flex-wrap: wrap
+      height: auto
       border: 1px dashed #5F2EEA
 
       .standart, .dissmisible
@@ -203,7 +246,13 @@
         gap: 20px
 
   .tooltips
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
     .sectionTabs
+      text-align: center
       font-weight: 700
       font-size: 48px
       line-height: 50px
@@ -211,16 +260,30 @@
       color: #14142B
       margin-bottom: 60px
 
-    .array
-      display: flex
-      flex-direction: row
-      gap: 40px
-      width: 800px
-      justify-content: center
-      border: 1px dashed #5F2EEA
+  .descriptions
+    text-align: center
+    max-width: 75%
+    font-size: 20px
+    margin-bottom: 30px
+    text-align: center
+
+  .array
+    display: flex
+    flex-direction: row
+    padding: 30px 0 30px 0
+    gap: 40px
+    width: 100%
+    flex-wrap: wrap
+    justify-content: center
+    border: 1px dashed #5F2EEA
 
   .modal
+    display: flex
+    flex-direction: column
+    align-items: center
+
     .sectionTabs
+      text-align: center
       text-align: center
       font-weight: 700
       font-size: 48px
@@ -256,3 +319,89 @@
 
 //   to {
 //   transform: rotate(360deg)
+
+@media screen and (max-width: 469px)
+  .wrapper
+    gap: 50px
+    .descriptions
+
+      font-size: 15px
+      text-align: center
+
+    .button
+      gap: 10px
+      .descriptions
+
+        font-size: 15px
+        text-align: center
+
+      .forms
+        font-size: 18px
+
+      .buttons
+        font-size: 25px
+
+      .size
+        font-size: 22px
+
+    .accordion
+      .descriptions
+
+        font-size: 15px
+        text-align: center
+
+      b
+        font-size: 20px
+
+    .dropdown
+      .descriptions
+        font-size: 15px
+        text-align: center
+
+      .options
+        font-size: 25px
+
+      .option
+        width: 80%
+
+    .progress
+      .sectionTabs
+        font-size: 25px
+
+    .comments
+      .sectionTabs
+        font-size: 25px
+
+    .toast
+      .descriptions
+
+        font-size: 15px
+        text-align: center
+
+      .sectionTabs
+        font-size: 25px
+
+      .array
+        width: auto
+        justify-content: center
+
+    .tooltips
+      .sectionTabs
+        font-size: 25px
+
+      .array
+        width: auto
+        padding: 30px 0 30px 0
+        justify-content: center
+
+    .modal
+      .sectionTabs
+        font-size: 25px
+
+    .carousel
+      .sectionTabs
+        font-size: 25px
+
+    .select
+      .display, .sectionTabs, .tabs
+        font-size: 20px
