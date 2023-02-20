@@ -1,0 +1,57 @@
+$bounce-color: #7433ff
+$image-size: 85px
+
+.avatar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  column-gap: 20px
+
+  & .description
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    row-gap: 10px
+    width: 100%
+
+    & p
+      letter-spacing: 0.75px
+      font-weight: 600
+      font-size: 14px
+      line-height: 24px
+      color: #6e7191
+      width: 100%
+
+  img.user
+    height: $image-size
+    width: $image-size
+    background-color: $bounce-color
+    box-shadow: 0 0 0 5px $bounce-color
+    border-radius: 50%
+    object-fit: cover
+    object-position: center
+
+    &:hover
+      cursor: pointer
+      animation: bounceOut 0.4s linear
+
+@keyframes bounceOut
+  0%
+    box-shadow: 0 0 0 4px $bounce-color
+    opacity: 1
+
+  25%
+    box-shadow: 0 0 0 1px $bounce-color
+    opacity: 1
+
+  50%
+    box-shadow: 0 0 0 7px $bounce-color
+    opacity: 1
+
+  75%
+    box-shadow: 0 0 0 4px $bounce-color
+    opacity: 1
+
+  100%
+    box-shadow: 0 0 0 5px $bounce-color
+    opacity: 1

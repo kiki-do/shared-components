@@ -1,0 +1,134 @@
+$color-title-active: #14142b
+$bg-body: #4e4b66
+$color-label: #6e7191
+$color-placeholder: #a0a3bd
+$border-color-line: #d9dbe9
+$bg-input: #d9dbe9
+$bg-element: #f7f7fc
+$bg-off-width: #fcfcfc
+
+$color-primary: #5f2eea
+$color-secondary: #1cc8ee
+
+$color-error: #ed2e7e
+$color-success: #00ba88
+$color-warning: #f4b740
+
+/* $color-gradient */
+$color-gradient-primary-angel: 114.44deg
+$color-gradient-primary-top: #7433ff
+$color-gradient-primary-bottom: #bca4ff
+$color-gradient-secondary-top: #624af2
+$color-gradient-secondary-bottom: #50ddc3
+$color-gradient-accent-top: #eb0055
+$color-gradient-accent-bottom: #fffa80
+
+/* $color-gradient */
+
+/*colors-light*/
+$color-primary-light: #bca4ff
+$color-secondary-light: #82e9ff
+$color-error-light: #ff84b7
+$color-success-light: #34eab9
+$color-warning-light: #ffd789
+/*colors-light*/
+
+.form
+  margin: 0 auto
+  max-width: 500px
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+  & .input-box
+    position: relative
+    width: 100%
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    row-gap: 10px
+
+    & input
+      padding-left: 24px
+
+    & textarea
+      padding-top: 18px
+      height: 100px
+
+    & .closeSvg
+      position: absolute
+      top: 20px
+      right: 20px
+      z-index: 10
+      cursor: pointer
+
+      & img
+        max-width: 100%
+        height: 20px
+        width: 20px
+
+    & :where(input, textarea)
+      position: relative
+      height: 60px
+      width: 100%
+      outline: none
+      font-size: 1rem
+      color: $color-title-active
+      margin-top: 8px
+      border: 1px solid #ddd
+      border-radius: 6px
+      background: $bg-element
+      border-radius: 16px
+
+      &.success
+        border: 2px solid rgba($color-success, 0.5)
+        background-color: rgba($color-success-light, 0.1)
+
+      &.error
+        border: 2px solid rgba($color-error, 0.5)
+        background-color: rgba($color-error-light, 0.1)
+
+      &:focus
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+
+  & .wrapper
+    width: 100%
+    display: flex
+    align-items: center
+    position: relative
+
+    & .icon
+      position: absolute
+      z-index: 10
+      top: 30.5px
+      left: 10px
+      width: 18px
+      height: 5px
+
+      & img
+        max-width: 100%
+
+    & input
+      padding-left: 34px
+
+      &.success + small
+        color: $color-success
+
+    &.success + small
+      color: $color-success
+
+  textarea
+    resize: vertical
+    padding-top: 5px
+
+small
+  font-family: 'Poppins'
+  color: $color-error
+
+input.success + small
+  color: $color-success
+
+textarea.success + small
+  color: $color-success

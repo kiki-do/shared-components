@@ -10,7 +10,6 @@ export const VIEWS = {
 	primary: classes.primary,
 	secondary: classes.secondary,
 	subtle: classes.subtle,
-	text: classes.text,
 } as const;
 
 /* Свойство кнопки иконки */

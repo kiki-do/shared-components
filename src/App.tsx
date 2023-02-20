@@ -1,16 +1,31 @@
+import { Avatar } from "@mui/material";
 import { useState, useEffect } from "react";
 import classes from "./App.module.sass";
 import { Accordion } from "./assets/components/Accordion/Accordion";
+import BoxComponent from "./assets/components/BoxComponent/BoxComponent";
 import { Button } from "./assets/components/Button/Button";
 import { CarouselPagination } from "./assets/components/CarouselPagination/CarouselPagination";
+import CheckBoxComponent from "./assets/components/CheckBoxComponent/CheckBoxComponent";
 import { CircularProgression } from "./assets/components/CircrularProgression/CircularProgression";
 import { Comments } from "./assets/components/Comments/Comments";
+import CustomHeaders from "./assets/components/CustomHeaders/CustomHeaders";
+import CustomizedTables from "./assets/components/CustomizedTable/CustomizedTable";
 import { Dropdown } from "./assets/components/Dropdown/Dropdown";
+import InputTextComponent from "./assets/components/InputTextComponent/InputTextComponent";
+import LikeTagIcons from "./assets/components/LikeTagIcons/LikeTagIcons";
 import { Modal } from "./assets/components/Modal/Modal";
+import NumericStepperComponent from "./assets/components/NumericStepperComponent/NumericStepperComponent";
 import { ProgressIndicator } from "./assets/components/ProgressIndicator/ProgressIndicator";
+import { Radio } from "./assets/components/Radio/Radio";
+import RadioGroupComponent from "./assets/components/RadioGroupComponent/RadioGroupComponent";
+import { Search } from "./assets/components/Search/Search";
 import { Select } from "./assets/components/Select/Select";
+import SwitchComponent from "./assets/components/SwitchComponent/SwitchComponent";
+import TableComponent from "./assets/components/TableComponent/TableComponent";
 import { Toast } from "./assets/components/Toast/Toast";
 import { Tooltip } from "./assets/components/Tooltip/Tooltip";
+import { Filters } from "./components/Filters/Filters";
+import { SearchBar } from "./components/SearchBar/SearchBar";
 
 export interface optionsProps {
 	id: number;
@@ -42,6 +57,7 @@ function App() {
 
 	return (
 		<div className={classes.wrapper}>
+			Daniil
 			<div className={classes.button}>
 				<div className={classes.forms}>Forms</div>
 				<div className={classes.buttons}>Buttons</div>
@@ -195,7 +211,6 @@ function App() {
 					I wonder if there is a way this can be learned quickly.
 				</Comments>
 			</div>
-
 			<div className={classes.toast}>
 				<div className={classes.sectionTabs}>Toasts</div>
 				<div className={classes.descriptions}>
@@ -228,7 +243,6 @@ function App() {
 					</div>
 				</div>
 			</div>
-
 			<div className={classes.tooltips}>
 				<div className={classes.sectionTabs}>Tooltips</div>
 				<div className={classes.descriptions}>
@@ -246,7 +260,6 @@ function App() {
 					</Tooltip>
 				</div>
 			</div>
-
 			<div className={classes.modal}>
 				<div className={classes.sectionTabs}>Modal</div>
 				<div className={classes.descriptions}>
@@ -262,6 +275,25 @@ function App() {
 				>
 					See all the new features we’ve added through our tutorial.
 				</Modal>
+			</div>
+			<div className={classes.searchBar}>
+				<SearchBar />
+				<Filters />
+			</div>
+			<div className={classes.container}></div>
+			Bekzod
+			<div className={classes.components}>
+				<SwitchComponent />
+				<BoxComponent />
+				<CheckBoxComponent />
+				<RadioGroupComponent />
+				<NumericStepperComponent />
+				<Avatar />
+				<LikeTagIcons />
+				<CustomizedTables />
+				<CustomHeaders />
+				<TableComponent />
+				<InputTextComponent />
 			</div>
 		</div>
 	);

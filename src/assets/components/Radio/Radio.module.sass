@@ -1,0 +1,60 @@
+@import '/src/assets/_style_d/main'
+@import '/src/assets/_style_d/_darkColors'
+
+.wrapper
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  .label
+    display: flex
+    align-items: center
+
+    .radio
+      display: none
+
+    .text
+      position: relative
+      padding-top: 5px
+      padding-left: 40px
+      font-weight: 400
+      font-size: 14px
+      line-height: 24px
+      letter-spacing: 0.75px
+      color: #4E4B66
+
+      &::before
+        content: ""
+        display: block
+        width: 32px
+        height: 32px
+        position: absolute
+        border-radius: 50%
+        background: $border-color-line
+        top: 0
+        left: 0
+
+        &:hover::before
+          border-radius: 50%
+          opacity: 1
+
+      &::after
+        content: ""
+        display: block
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 16px
+        height: 16px
+        background: white
+        border: 9px solid $color-primary
+        opacity: 0
+        transition: 0.3s
+        border-radius: 50%
+
+        &:hover
+          cursor: pointer
+          border: 9px solid $color-primary-darck
+
+    .radio:checked + .text::after
+      opacity: 1

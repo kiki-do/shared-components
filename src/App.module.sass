@@ -1,5 +1,16 @@
-.App
-  text-align: center
+::root
+  --primary-light: #8abdff
+  --primary: #6d5dfc
+  --primary-dark: #5b0eeb
+
+  --white: #ffffff
+  --greyLight-1: #e4ebf5
+  --greyLight-2: #c8d0e7
+  --greyLight-3: #bec8e4
+  --greyDark: #9baacf
+
+  .App
+    text-align: center
 
 .wrapper
   max-width: 1200px
@@ -292,6 +303,39 @@
       color: #14142B
       margin-bottom: 60px
 
+  .container
+    min-height: 100vh
+    max-width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Poppins', sans-serif
+    background: var(--greyLight-1)
+
+    .components
+      width: 120rem
+      max-width: 100%
+      height: auto
+      border-radius: 3rem
+      box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), (-0.2rem -0.2rem 1.8rem var(--white))
+      padding: 4rem
+      display: grid
+      grid-template-columns: repeat(3, minmax(300px, 1fr))
+      grid-template-rows: repeat(autofit, min-content)
+      grid-column-gap: 8rem
+      grid-row-gap: 2.5rem
+      align-items: center
+      justify-items: center
+
+      @media screen and (max-width: 1200px)
+        grid-template-columns: repeat(2, minmax(300px, 1fr))
+
+      @media screen and (max-width: 780px)
+        grid-template-columns: repeat(1, minmax(200px, 1fr))
+        height: auto
+        grid-column-gap: 0
+        grid-row-gap: 4rem
+        padding: 1rem
 .App-logo
   height: 40vmin
   pointer-events: none

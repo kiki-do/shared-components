@@ -72,3 +72,31 @@
       .icon
         & path
           opacity: 0.5
+
+  /*Стили */ 
+  /*Основной стиль кнопки*/ 
+  &.subtle
+    background: $white
+    border: 2px solid $border-secondary-focus
+
+    &:hover
+      color: $color-primary-darck
+      border: 2px solid $border-secondary-focus
+      transition: 0.3s
+
+      .icon
+        & path
+          stroke: $color-primary-darck
+
+    &:focus
+      color: $border-secondary-focus
+      outline: 8px solid $border-secondary-focus
+      transition: 0.3s
+
+  &:active
+    border: 2px solid $color-title-active
+    color: $color-title-active
+    transition: 0.3s
+
+    &:disabled
+      opacity: 0.5
