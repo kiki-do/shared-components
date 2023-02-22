@@ -2,8 +2,10 @@ import { useState, useRef } from "react";
 import type { ChangeEvent, FC } from "react";
 import { Icon } from "../Icon/Icon";
 import classes from "./Search.module.sass";
+import { useMatchMedia } from "../../../hooks/useMatchMedia";
 
 export const Search: FC = () => {
+	const { isMobile }: any = useMatchMedia();
 	const [search, setSearch] = useState("");
 	const searchRef = useRef<HTMLInputElement>(null);
 	const onChangeSearch = (event: ChangeEvent<HTMLInputElement>) => {
@@ -21,6 +23,7 @@ export const Search: FC = () => {
 				className={classes.input}
 				value={search}
 			/>
+			{isMobile && <Icon name="configure" />}
 		</form>
 	);
 };

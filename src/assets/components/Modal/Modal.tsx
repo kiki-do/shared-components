@@ -22,7 +22,7 @@ export const Modal: ModalComponent = ({
 	handleIsModal,
 	isModal,
 }) => {
-	const isMobile = useMatchMedia();
+	const { isMobile }: any = useMatchMedia();
 
 	const wrapperClassName = useMemo(
 		() =>

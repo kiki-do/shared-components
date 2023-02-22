@@ -11,6 +11,7 @@ import { Comments } from "./assets/components/Comments/Comments";
 import CustomHeaders from "./assets/components/CustomHeaders/CustomHeaders";
 import CustomizedTables from "./assets/components/CustomizedTable/CustomizedTable";
 import { Dropdown } from "./assets/components/Dropdown/Dropdown";
+import { Input } from "./assets/components/Input/Input";
 import InputTextComponent from "./assets/components/InputTextComponent/InputTextComponent";
 import LikeTagIcons from "./assets/components/LikeTagIcons/LikeTagIcons";
 import { Modal } from "./assets/components/Modal/Modal";
@@ -278,9 +279,8 @@ function App() {
 			</div>
 			<div className={classes.searchBar}>
 				<SearchBar />
-				<Filters />
 			</div>
-			<div className={classes.container}></div>
+			{/* <div className={classes.container}></div>
 			Bekzod
 			<div className={classes.components}>
 				<SwitchComponent />
@@ -294,7 +294,8 @@ function App() {
 				<CustomHeaders />
 				<TableComponent />
 				<InputTextComponent />
-			</div>
+				<Input placeholder="ho" />
+			</div> */}
 		</div>
 	);
 }

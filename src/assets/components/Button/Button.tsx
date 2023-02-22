@@ -32,7 +32,7 @@ export interface ButtonComponent extends FC<ButtonProps> {
 }
 
 export const Button: ButtonComponent = ({
-	size = "medium",
+	size = "large",
 	view = "primary",
 	className,
 	onClick,

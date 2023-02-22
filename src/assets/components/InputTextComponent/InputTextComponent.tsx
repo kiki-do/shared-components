@@ -239,7 +239,7 @@ const InputTextComponent = () => {
 				</small>
 			</div>
 
-			<div className="input-box">
+			{/* <div className="input-box">
 				{search && showCloseIcon ? (
 					<div className="closeSvg" onClick={() => handleClear("search")}>
 						<img src={multiplyLogo} alt="Close" />
@@ -268,7 +268,7 @@ const InputTextComponent = () => {
 				</div>
 
 				<small>{searchErrorMessage}</small>
-			</div>
+			</div> */}
 		</form>
 	);
 };

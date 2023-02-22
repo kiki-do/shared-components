@@ -1,0 +1,32 @@
+.wrapper
+  display: flex
+  flex-direction: row
+  position: relative
+
+  .input
+    width: 90%
+    background: #EFF0F7
+    border-radius: 16px
+    border: none
+    outline: none
+    padding: 14px 24px
+    font-weight: 400
+    font-size: 16px
+    line-height: 28px
+    letter-spacing: 0.75px
+
+    &:placeholder-shown
+      color: #A0A3BD
+
+  .icon
+    cursor: pointer
+    position: absolute
+    right: 0
+    top: 20px
+    & path
+      stroke: black
+
+@media screen and ( max-width: 469px )
+  .wrapper
+    .icon
+      right: -20px
